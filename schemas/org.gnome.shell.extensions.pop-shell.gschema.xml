@@ -45,7 +45,7 @@
 
         <!-- Focus Shifting -->
         <key type="as" name="focus-left">
-            <default><![CDATA[['<Super>Left','<Super>h']]]></default>
+            <default><![CDATA[['<Super>Left']]]></default>
             <summary>Focus left window</summary>
         </key>
 
@@ -60,7 +60,7 @@
         </key>
 
         <key type="as" name="focus-right">
-            <default><![CDATA[['<Super>Right','<Super>l']]]></default>
+            <default><![CDATA[['<Super>Right']]]></default>
             <summary>Focus right window</summary>
         </key>
 
