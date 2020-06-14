@@ -27,22 +27,26 @@ dconf write ${KEYS_GNOME_SHELL}/toggle-message-tray "@as ['<Super>v']"
 dconf write ${KEYS_GNOME_WM}/switch-to-workspace-left "@as []"
 # Switch to workspace right: disable <Super>Right
 dconf write ${KEYS_GNOME_WM}/switch-to-workspace-right "@as []"
+# Move to monitor up: disable <Super>Up
+dconf write ${KEYS_GNOME_WM}/move-to-monitor-up "@as []"
+# Move to monitor down: disable <Super>Down
+dconf write ${KEYS_GNOME_WM}/move-to-monitor-down "@as []"
 
 # Super + direction keys, move window left and right monitors, or up and down workspaces
 # Move window one monitor to the left
 dconf write ${KEYS_GNOME_WM}/move-to-monitor-left "['<Shift><Super>Left','<Shift><Super>${left}']"
 # Move window one workspace down
-dconf write ${KEYS_GNOME_WM}/move-to-workspace-down "['<Shift><Super>Down','<Shift><Super>${down}']"
+dconf write ${KEYS_GNOME_WM}/move-to-workspace-down "['<Shift><Super>Down','<Shift><Super>${down}','<Shift><Super>Page_Down']"
 # Move window one workspace up
-dconf write ${KEYS_GNOME_WM}/move-to-workspace-up "['<Shift><Super>Up','<Shift><Super>${up}']"
+dconf write ${KEYS_GNOME_WM}/move-to-workspace-up "['<Shift><Super>Up','<Shift><Super>${up}','<Shift><Super>Page_Up']"
 # Move window one monitor to the right
 dconf write ${KEYS_GNOME_WM}/move-to-monitor-right "['<Shift><Super>Right','<Shift><Super>${right}']"
 
 # Super + Ctrl + direction keys, change workspaces, move focus between monitors
 # Move to workspace below
-dconf write ${KEYS_GNOME_WM}/switch-to-workspace-down "['<Primary><Super>Down','<Primary><Super>${down}']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-down "['<Primary><Super>Down','<Primary><Super>${down}','<Super>Page_Down']"
 # Move to workspace above
-dconf write ${KEYS_GNOME_WM}/switch-to-workspace-up "['<Primary><Super>Up','<Primary><Super>${up}']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-up "['<Primary><Super>Up','<Primary><Super>${up}','<Super>Page_Up']"
 
 # Disable tiling to left / right of screen
 dconf write ${KEYS_MUTTER}/toggle-tiled-left "@as []"
